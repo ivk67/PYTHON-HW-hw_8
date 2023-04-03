@@ -1,8 +1,6 @@
 
-############################################################################################################
-
-import os
 # функция для импорта данных из текстового файла
+import os
 def import_data():
     filename = 'contacts.txt'
     if os.path.exists(filename):
@@ -12,8 +10,9 @@ def import_data():
     else:
         print('Телефонный справочник не найден')
         return []
-import codecs
+
 # функция для экспорта данных в текстовый файл
+import codecs
 def export_data(data):
     with codecs.open('contacts.txt', 'w', encoding='utf-8') as f:
         f.writelines(data)
