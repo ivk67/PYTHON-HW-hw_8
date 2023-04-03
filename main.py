@@ -14,6 +14,7 @@ def import_data():
 # функция для экспорта данных в текстовый файл
 import codecs
 def export_data(data):
+#    with open('contacts.txt', 'w') as f:
     with codecs.open('contacts.txt', 'w', encoding='utf-8') as f:
         f.writelines(data)
     print('Данные успешно экспортированы')
